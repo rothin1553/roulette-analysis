@@ -14,6 +14,7 @@ Welcome to the project!
     - click add
 9b. if you see "No such file or directory"
     - follow these steps to create the key https://www.siteground.com/kb/how_to_generate_an_ssh_key_pair_in_mac_os/
+    - go back to step 8
 10. on your machine, navigate to the folder "github"
 11. right click on the folder "github"; at the bottom menu click "New Terminal at folder"
 12. type command "git clone git@github.com:rothin1553/roulette-analysis.git"
