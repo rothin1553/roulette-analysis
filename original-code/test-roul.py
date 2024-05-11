@@ -90,7 +90,7 @@ def test_case2(test=100, win_threshold=350):
 ## change win threshold to see difference result 
 ## win threshold is the case amount to reach before stop betting and to consider winning
 ## 300 is the initial value; any value greater than 300 can be consider as profit
-win_threshold = 325
+win_threshold = 350
 
 test = 1000
 t={"w":0, "l":0}
