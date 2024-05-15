@@ -14,7 +14,21 @@
     
     <div class="container py-3">
         <h3 class="text-center">Roulette Betting Strategy</h3>
+        <p>
+            Each bet cost $150. 3 outcomes:<br>
+            <ul>
+                <li>
+                    Outcome #1: Win $25 with 26.3% 
+                </li>
+                <li>
+                    Outcome #2: Draw $0 with 63.2% 
+                </li>
+                <li>
+                    Outcome #3: Lose all $150 with 10.5% 
+                </li>
 
+            </ul>
+        </p>
 
         <div class="mt-3">
             <div id="chart1"></div>
@@ -37,6 +51,9 @@
                     valueFormatString: "#'%'",
                     enabled: true,
                 },
+                toolTip:{
+                    shared: true,
+                },
                 animationEnabled: true,
                 exportEnabled: true,
                 theme: "light1", // "light1", "light2", "dark1", "dark2"
@@ -47,57 +64,113 @@
                     xValueFormatString:"Chance of win #",
                     yValueFormatString:"#.#'%'",
                     type: "line", //change type to bar, line, area, pie, etc  
-                    color: "red",
-                    name: "Percentage",
+                    color: "darkgreen",
+                    name: "Same Bet",
                     showInLegend: true,
                     dataPoints: 
                     [
                         {
-                            "label": "$300",
+                            "label": "$0",
                             "y": 95.0
                         },
                         {
-                            "label": "$310",
+                            "label": "$10",
                             "y": 70.0
                         },
                         {
-                            "label": "$320",
+                            "label": "$20",
                             "y": 72.0
                         },
                         {
-                            "label": "$330",
+                            "label": "$30",
                             "y": 61.0
                         },
                         {
-                            "label": "$340",
+                            "label": "$40",
                             "y": 59.0
                         },
                         {
-                            "label": "$350",
+                            "label": "$50",
                             "y": 53.0
                         },
                         {
-                            "label": "$360",
+                            "label": "$60",
                             "y": 40.0
                         },
                         {
-                            "label": "$370",
+                            "label": "$70",
                             "y": 45.0
                         },
                         {
-                            "label": "$380",
+                            "label": "$80",
                             "y": 32.0
                         },
                         {
-                            "label": "$390",
+                            "label": "$90",
                             "y": 26.0
                         },
                         {
-                            "label": "$400",
+                            "label": "$100",
                             "y": 31.0
                         }
                     ] // end dataPoints
-                }] // end data
+                }, // end one data
+                {
+                    xValueFormatString:"Chance of win #",
+                    yValueFormatString:"#.#'%'",
+                    type: "line", //change type to bar, line, area, pie, etc  
+                    color: "tomato",
+                    name: "Random Bet",
+                    showInLegend: true,
+                    dataPoints: 
+                    [
+                        {
+                            "label": "$0",
+                            "y": 94.0
+                        },
+                        {
+                            "label": "$10",
+                            "y": 73.0
+                        },
+                        {
+                            "label": "$20",
+                            "y": 74.0
+                        },
+                        {
+                            "label": "$30",
+                            "y": 59.0
+                        },
+                        {
+                            "label": "$40",
+                            "y": 49.0
+                        },
+                        {
+                            "label": "$50",
+                            "y": 46.0
+                        },
+                        {
+                            "label": "$60",
+                            "y": 42.0
+                        },
+                        {
+                            "label": "$70",
+                            "y": 42.0
+                        },
+                        {
+                            "label": "$80",
+                            "y": 28.000000000000004
+                        },
+                        {
+                            "label": "$90",
+                            "y": 35.0
+                        },
+                        {
+                            "label": "$100",
+                            "y": 41.0
+                        }
+                    ] // end dataPoints
+                }, // end data 2
+            ] // end data
             });
             char1.render();
         

@@ -3,7 +3,7 @@ import sys
 sys.path.append("..")
 
 
-from original_code.test_roul import test_case1
+from original_code.test_roul import test_case1, test_case2
 
 
 dataPoints = []
@@ -13,7 +13,7 @@ while win_threshold <= 400:
     test = 100
     win_count = 0
     for i in range(test):
-        if(test_case1(win_threshold=win_threshold)>= win_threshold):
+        if(test_case2(win_threshold=win_threshold)>= win_threshold):
             win_count+=1
     point = {
         "label": f"${win_threshold}",
