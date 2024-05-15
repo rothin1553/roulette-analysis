@@ -90,22 +90,24 @@ def test_case2(test=100, win_threshold=350):
 ## change win threshold to see difference result 
 ## win threshold is the case amount to reach before stop betting and to consider winning
 ## 300 is the initial value; any value greater than 300 can be consider as profit
-win_threshold = 350
 
-test = 1000
-t={"w":0, "l":0}
-t0={"w":0, "l":0}
-for i in range(test):
-    if(test_case2(test=10000,win_threshold=win_threshold) > 300):
-        t["w"]+=1
-    else:
-        t["l"]+=1
-    if(test_case1(test=10000, win_threshold=win_threshold) > 300):
-        t0["w"]+=1
-    else:
-        t0["l"]+=1
+if __name__ == "__main__":
+    win_threshold = 350
 
-print(f"win0: {t0['w']/test*100:.1f}%  |  win: {t['w']/test*100:.1f}%")
+    test = 1000
+    t={"w":0, "l":0}
+    t0={"w":0, "l":0}
+    for i in range(test):
+        if(test_case2(test=10000,win_threshold=win_threshold) > 300):
+            t["w"]+=1
+        else:
+            t["l"]+=1
+        if(test_case1(test=10000, win_threshold=win_threshold) > 300):
+            t0["w"]+=1
+        else:
+            t0["l"]+=1
+
+    print(f"win0: {t0['w']/test*100:.1f}%  |  win: {t['w']/test*100:.1f}%")
 
 
 """
