@@ -15,13 +15,33 @@ function roth_bet1()
     setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(27)"), '2,5,8,11,14,17,20,23,26,29,32,35', 'outside_column', 2);
     setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(40)"), '1,4,7,10,13,16,19,22,25,28,31,34', 'outside_column', 2);
     
-    //await spin();
-    // await new Promise((resolve, reject) => {
     spin();
-    //     resolve();
-    // });
-    //setTimeout(function(){console.log("wait to finish.")}, 20000);
 }
+
+function roth_bet2()
+{
+	// bet 1-24
+    wager = 50;
+    setBet(document.querySelector("#betting_board > div.bo3_board > div:nth-child(1)"), '1,2,3,4,5,6,7,8,9,10,11,12', 'outside_dozen', 2);
+    setBet(document.querySelector("#betting_board > div.bo3_board > div:nth-child(2)"), '13,14,15,16,17,18,19,20,21,22,23,24', 'outside_dozen', 2);
+
+	// bet indiviual number 
+	wager = 5;
+    setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(36)"), '25', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(23)"), '26', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(10)"), '27', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(24)"), '29', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(11)"), '30', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(25)"), '32', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(12)"), '33', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(39)"), '34', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(26)"), '35', 'inside_whole', 35);
+	setBet(document.querySelector("#betting_board > div.number_board > div:nth-child(13)"), '36', 'inside_whole', 35);
+    
+    
+    spin();
+}
+
 
 function run_scenario1(test=5)
 {
@@ -34,7 +54,7 @@ function run_scenario1(test=5)
 
 
 let numRed = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36];
-let wheelnumbersAC = [0, 26, 3, 35, 12, 28, 7, 29, 18, 22, 9, 31, 14, 20, 1, 33, 16, 24, 5, 10, 23, 8, 30, 11, 36, 13, 27, 6, 34, 17, 25, 2, 21, 4, 19, 15, 32];
+let wheelnumbersAC = [0, 26, 3, 35, 12, 28, 7, 29, 18, 22, 9, 31, 14, 20, 1, 33, 16, 24, 5, 37 , 10, 23, 8, 30, 11, 36, 13, 27, 6, 34, 17, 25, 2, 21, 4, 19, 15, 32];
 
 let container = document.createElement('div');
 container.setAttribute('id', 'container');
