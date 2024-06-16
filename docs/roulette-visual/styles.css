@@ -520,162 +520,56 @@ html, body{
 
 #sect1 .block {
 	background-color: #016D29;
-	transform:rotate(9.73deg);
+	transform:rotate(9.4737deg);
 }
     
-#sect2 .block, #sect4 .block, #sect6 .block, #sect8 .block, #sect10 .block, #sect12 .block, #sect14 .block, #sect16 .block, #sect18 .block, #sect20 .block, #sect22 .block, #sect24 .block, #sect26 .block, #sect28 .block, #sect30 .block, #sect32 .block, #sect34 .block, #sect36 .block {
+#sect2 .block, #sect4 .block, #sect6 .block, #sect8 .block, #sect10 .block, #sect12 .block, #sect14 .block, #sect16 .block, #sect18 .block, #sect22 .block, #sect24 .block, #sect26 .block, #sect28 .block, #sect30 .block, #sect32 .block, #sect34 .block, #sect36 .block, #sect38 .block {
 	background-color: #E0080B;
-	transform: rotate(9.73deg);
+	transform: rotate(9.4737deg);
 }
 
 #sect3 .block, #sect5 .block, #sect7 .block, #sect9 .block, #sect11 .block, #sect13 .block, #sect15 .block, #sect17 .block, #sect19 .block, #sect21 .block, #sect23 .block, #sect25 .block, #sect27 .block, #sect29 .block, #sect31 .block, #sect33 .block, #sect35 .block, #sect37 .block {
 	background-color: #000;
-	transform: rotate(9.73deg);
+	transform: rotate(9.4737deg);
 }
 
-#sect2 {
-	transform: rotate(9.73deg);
-}
-
-#sect3 {
-	transform: rotate(19.46deg);
-}
-
-#sect4 {
-	transform: rotate(29.19deg);
-}
-
-#sect5 {
-	transform: rotate(38.92deg);
-}
-
-#sect6 {
-	transform: rotate(48.65deg);
-}
-
-#sect7 {
-	transform: rotate(58.38deg);
-}
-
-#sect8 {
-	transform: rotate(68.11deg);
-}
-
-#sect9 {
-	transform: rotate(77.84deg);
-}
-
-#sect10 {
-	transform: rotate(87.57deg);
-}
-
-#sect11 {
-	transform: rotate(97.3deg);
-}
-
-#sect12 {
-	transform: rotate(107.03deg);
-}
-
-#sect13 {
-	transform: rotate(116.76deg);
-}
-
-#sect14 {
-	transform: rotate(126.49deg);
-}
-
-#sect15 {
-	transform: rotate(136.22deg);
-}
-
-#sect16 {
-	transform: rotate(145.95deg);
-}
-
-#sect17 {
-	transform: rotate(155.68deg);
-}
-
-#sect18 {
-	transform: rotate(165.41deg);
-}
-
-#sect19 {
-	transform: rotate(175.14deg);
-}
-
-#sect20 {
-	transform: rotate(184.87deg);
-}
-
-#sect21 {
-	transform: rotate(194.6deg);
-}
-
-#sect22 {
-	transform: rotate(204.33deg);
-}
-
-#sect23 {
-	transform: rotate(214.06deg);
-}
-
-#sect24 {
-	transform: rotate(223.79deg);
-}
-
-#sect25 {
-	transform: rotate(233.52deg);
-}
-
-#sect26 {
-	transform: rotate(243.25deg);
-}
-
-#sect27 {
-	transform: rotate(252.98deg);
-}
-
-#sect28 {
-	transform: rotate(262.71deg);
-}
-
-#sect29 {
-	transform: rotate(272.44deg);
-}
-
-#sect30 {
-	transform: rotate(282.17deg);
-}
-
-#sect31 {
-	transform: rotate(291.9deg);
-}
-
-#sect32 {
-	transform: rotate(301.63deg);
-}
-
-#sect33 {
-	transform: rotate(311.36deg);
-}
-
-#sect34 {
-	transform: rotate(321.09deg);
-}
-
-#sect35 {
-	transform: rotate(330.82deg);
-}
-
-#sect36 {
-	transform: rotate(340.55deg);
-}
-
-#sect37 {
-	transform: rotate(350.28deg);
-}
+#sect2 {transform: rotate(9.4737deg);}
+#sect3 {transform: rotate(18.9474deg);}
+#sect4 {transform: rotate(28.4211deg);}
+#sect5 {transform: rotate(37.8948deg);}
+#sect6 {transform: rotate(47.3685deg);}
+#sect7 {transform: rotate(56.8422deg);}
+#sect8 {transform: rotate(66.3159deg);}
+#sect9 {transform: rotate(75.7896deg);}
+#sect10 {transform: rotate(85.2633deg);}
+#sect11 {transform: rotate(94.7370deg);}
+#sect12 {transform: rotate(104.2107deg);}
+#sect13 {transform: rotate(113.6844deg);}
+#sect14 {transform: rotate(123.1581deg);}
+#sect15 {transform: rotate(132.6318deg);}
+#sect16 {transform: rotate(142.1055deg);}
+#sect17 {transform: rotate(151.5792deg);}
+#sect18 {transform: rotate(161.0529deg);}
+#sect19 {transform: rotate(170.5266deg);}
+#sect20 {transform: rotate(180.0003deg);background-color: #016D29;}
+#sect21 {transform: rotate(189.4740deg);}
+#sect22 {transform: rotate(198.9477deg);}
+#sect23 {transform: rotate(208.4214deg);}
+#sect24 {transform: rotate(217.8951deg);}
+#sect25 {transform: rotate(227.3688deg);}
+#sect26 {transform: rotate(236.8425deg);}
+#sect27 {transform: rotate(246.3162deg);}
+#sect28 {transform: rotate(255.7899deg);}
+#sect29 {transform: rotate(265.2636deg);}
+#sect30 {transform: rotate(274.7373deg);}
+#sect31 {transform: rotate(284.2110deg);}
+#sect32 {transform: rotate(293.6847deg);}
+#sect33 {transform: rotate(303.1584deg);}
+#sect34 {transform: rotate(312.6321deg);}
+#sect35 {transform: rotate(322.1058deg);}
+#sect36 {transform: rotate(331.5795deg);}
+#sect37 {transform: rotate(341.0532deg);}
+#sect38 {transform: rotate(350.5269deg);}
 
 .pockets {
 	position: absolute;

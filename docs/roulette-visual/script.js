@@ -54,7 +54,7 @@ function run_scenario1(test=5)
 
 
 let numRed = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36];
-let wheelnumbersAC = [0, 26, 3, 35, 12, 28, 7, 29, 18, 22, 9, 31, 14, 20, 1, 33, 16, 24, 5, 37 , 10, 23, 8, 30, 11, 36, 13, 27, 6, 34, 17, 25, 2, 21, 4, 19, 15, 32];
+let wheelnumbersAC = [0, 32, 15, 19, 4, 21, 2, 25, 17, 34, 6, 27, 13, 36, 11, 30, 8, 23, 10, 37, 26, 5, 24, 16, 33, 1, 20, 14, 31, 9, 22, 18, 29, 7, 28, 12, 35, 3];
 
 let container = document.createElement('div');
 container.setAttribute('id', 'container');
@@ -108,7 +108,7 @@ function buildWheel(){
 	outerRim.setAttribute('class', 'outerRim');
 	wheel.append(outerRim);
 
-	let numbers = [0, 32, 15, 19, 4, 21, 2, 25, 17, 34, 6, 27, 13, 36, 11, 30, 8, 23, 10, 5, 24, 16, 33, 1, 20, 14, 31, 9, 22, 18, 29, 7, 28, 12, 35, 3, 26];
+	let numbers = [0, 32, 15, 19, 4, 21, 2, 25, 17, 34, 6, 27, 13, 36, 11, 30, 8, 23, 10, 37, 26, 5, 24, 16, 33, 1, 20, 14, 31, 9, 22, 18, 29, 7, 28, 12, 35, 3];
 	for(i = 0; i < numbers.length; i++){
 		let a = i + 1;
 		let spanClass = (numbers[i] < 10)? 'single' : 'double';
@@ -118,6 +118,10 @@ function buildWheel(){
 		let span = document.createElement('span');
 		span.setAttribute('class', spanClass);
 		span.innerText = numbers[i];
+		if(numbers[i] == 37)
+		{
+			span.innerText = "00";
+		}
 		sect.append(span);
 		let block = document.createElement('div');
 		block.setAttribute('class', 'block');
@@ -545,7 +549,7 @@ function setBet(e, n, t, o){
 }
 
 function spin(){
-	var winningSpin = Math.floor(Math.random() * 36);
+	var winningSpin = Math.floor(Math.random() * 37);
 	spinWheel(winningSpin);
 	setTimeout(function(){
 		if(numbersBet.includes(winningSpin)){
@@ -657,7 +661,7 @@ function removeBet(e, n, t, o){
 function spinWheel(winningSpin){
 	for(i = 0; i < wheelnumbersAC.length; i++){
 		if(wheelnumbersAC[i] == winningSpin){
-			var degree = (i * 9.73) + 362;
+			var degree = (i * 9.4737) + 360;
 		}
 	}
 	wheel.style.cssText = 'animation: wheelRotate 5s linear infinite;';
